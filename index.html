@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sophard Labs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      background: #f5f5f5;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #000;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .service {
+      flex: 1 1 calc(33% - 20px);
+      background: #e0f7fa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+      color: #00796b;
+    }
+
+    footer {
+      text-align: center;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Contact form styles */
+    .contact-form {
+      background: #f5f5f5;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #00796b;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form input:focus,
+    .contact-form select:focus,
+    .contact-form textarea:focus {
+      border-color: #00796b;
+      outline: none;
+    }
+
+    .contact-form button {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .contact-form button:hover {
+      background-color: #004d40;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+      }
+
+      .service {
+        flex: 1 1 100%;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="C:\Users\hiran\OneDrive\Documents\WhatsApp Image 2025-05-12 at 15.34.05_4835b6cf.jpg" alt="Sophard Labs Logo">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to Sophard Labs</h1>
+    <p>Fusion of Technology and Tradition</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to Sophard Labs, your premier partner for innovative web development, software development, and AI solutions. Our team of expert developers and technologists craft tailored digital experiences that drive business growth, enhance user engagement, and solve complex problems.
+    </p>
+    <p>
+      At Sophard Labs, we harness the power of cutting-edge technologies to deliver high-quality, scalable, and secure solutions that meet the unique needs of our clients. From web development to custom software development and AI-powered solutions, our mission is to empower businesses with technology that sparks innovation and fuels success.
+    </p>
+    <p>
+      Whether you're looking to build a robust web application, develop a custom software solution, or leverage AI to gain valuable insights, our team is dedicated to delivering exceptional results that exceed your expectations. Let's collaborate to bring your vision to life and shape the future of technology together.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Web Development & Design</h3>
+        <p>Beautiful, responsive, and user-friendly websites built with modern technologies.</p>
+      </div>
+      <div class="service">
+        <h3>Software Development</h3>
+        <p>Custom software solutions tailored to your business processes and goals.</p>
+      </div>
+      <div class="service">
+        <h3>AI Development</h3>
+        <p>Intelligent systems using AI and machine learning to power your business.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+          <option value="web-dev">Web Development</option>
+          <option value="software-dev">Software Development</option>
+          <option value="ai-dev">AI Development</option>
+        </select>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sophard Labs. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
